@@ -20,7 +20,7 @@ syn spell notoplevel
 syn match haskellRecordField contained containedin=haskellBlock
   \ "[_a-z][a-zA-Z0-9_']*\(,\s*[_a-z][a-zA-Z0-9_']*\)*\_s\+::\_s"
   \ contains=
-  \ haskellIdentifier,
+  \ haskellRecordIdentifier,
   \ haskellOperators,
   \ haskellSeparator,
   \ haskellParens
@@ -138,6 +138,7 @@ endif
 highlight def link haskellBottom Macro
 highlight def link haskellTH Boolean
 highlight def link haskellIdentifier Identifier
+highlight def link haskellRecordIdentifier Identifier
 highlight def link haskellForeignKeywords Structure
 highlight def link haskellKeyword Keyword
 highlight def link haskellDefault Keyword
